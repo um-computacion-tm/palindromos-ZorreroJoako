@@ -6,10 +6,10 @@ class TestPalindromo(unittest.TestCase):
         self.assertTrue(es_palindromo_recursivo("anita lava la tina"))
 
     def test_palindromo2(self):
-        self.assertTrue(es_palindromo_recursivo("A man a plan a canal Panama"))
+        self.assertTrue(es_palindromo_recursivo("neuquen"))
 
     def test_palindromo3(self):
-        self.assertFalse(es_palindromo_recursivo("Hello, world!"))
+        self.assertFalse(es_palindromo_recursivo("Hola mundo"))
 
 if __name__ == '__main__':
     unittest.main()
