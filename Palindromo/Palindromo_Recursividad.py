@@ -1,7 +1,8 @@
-def palindromo_recursivo(cadena, inicio, fin):
-    if inicio >= fin:
+def es_palindromo_recursivo(palabra):
+    palabra = palabra.lower().replace(" ", "")
+    if len(palabra) <= 1:
         return True
-    if cadena[inicio] == cadena[fin]:
-        return palindromo_recursivo(cadena, inicio+1, fin-1)
+    elif palabra[0] == palabra[-1]:
+        return es_palindromo_recursivo(palabra[1:-1])
     else:
         return False
